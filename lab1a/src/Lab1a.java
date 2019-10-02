@@ -9,15 +9,17 @@ public class Lab1a {
 		int numberOfYears, month, annualInterestRate;
 		String year = "year";
 
+		System.out.printf("Loan Amortization Schedule\n\n");
+
 		// Prompt for balance, check for validity
 		System.out.printf("Enter loan amount: ");
-
+		// Prevent non-double balance input
 		while (!in.hasNextDouble()) {
 			System.out.printf("\nEnter a numerical value.\n\nEnter loan amount: ");
 			in.next();
 		}
 		balance = in.nextDouble();
-
+		// Prevent negative balance input
 		while (balance <= 0) {
 			System.out.printf("\nEnter a positive value.\n\nEnter loan amount: ");
 			balance = in.nextDouble();
@@ -25,13 +27,13 @@ public class Lab1a {
 
 		// Prompt for numberOfYears, check for validity
 		System.out.printf("\nEnter number of years: ");
-
+		// Prevent non-int numberOfYears input
 		while (!in.hasNextInt()) {
 			System.out.printf("\nEnter a whole number.\n\nEnter number of years: ");
 			in.next();
 		}
 		numberOfYears = in.nextInt();
-
+		// Prevent negative numberOfYears input
 		while (numberOfYears <= 0) {
 			System.out.printf("\nEnter a positive value.\n\nEnter number of years: ");
 			numberOfYears = in.nextInt();
@@ -39,12 +41,13 @@ public class Lab1a {
 
 		// Prompt for annualInterestRate, check for validity
 		System.out.printf("\nEnter annual interest rate: ");
+		// Prevent non-int annualInterestRate input
 		while (!in.hasNextInt()) {
 			System.out.printf("\nEnter a whole number.\n\nEnter annual interest rate: ");
 			in.next();
 		}
 		annualInterestRate = in.nextInt();
-
+		// Prevent out of bounds annualInterestRate input
 		while (annualInterestRate <= 0 || annualInterestRate >= 100) {
 			System.out.printf("\nEnter a valid number.\n\nEnter annual interest rate: ");
 			annualInterestRate = in.nextInt();
@@ -75,7 +78,7 @@ public class Lab1a {
 		System.out.printf("%-" + width + "s%-" + width + "s%-" + width + "s%-" + width + "s\n", "Payment", "Interest",
 				"Principal", "Balance");
 
-		// Loop table contents
+		// Loop table contents with monetary calculations
 		for (month = 1; month <= numberOfYears * 12; month++) {
 			interest = monthlyInterestRate * balance;
 			principal = monthlyPayment - interest;
