@@ -63,7 +63,7 @@ public class Lab1a {
 		// Payment calculations
 		monthlyPayment = balance * monthlyInterestRate
 				/ (1 - 1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12));
-		// derived from Listing 2.9 - ComputeLoan.java (pg. 61 of textbook)
+		// Derived from Listing 2.9 - ComputeLoan.java (pg. 61 of textbook)
 		totalPayment = monthlyPayment * (numberOfYears * 12);
 		System.out.printf("Monthly Payment: $%-10.2f\n", monthlyPayment);
 		System.out.printf("Total Payment: $%-10.2f\n\n", totalPayment);
