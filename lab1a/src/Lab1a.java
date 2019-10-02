@@ -81,12 +81,10 @@ public class Lab1a {
 			principal = monthlyPayment - interest;
 			balance = balance - principal;
 
-			// System.out.println(month + "\t\t" + interest + "\t\t" + principal + "\t\t" +
-			// balance);
 			System.out.printf(
 					"%-" + width + "d$%-" + (width - 1) + ".2f$%-" + (width - 1) + ".2f$%-" + (width - 1) + ".2f\n",
 					month, interest, principal, Math.abs(balance));
 		}
-		
+
 	}
 }
