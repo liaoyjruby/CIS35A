@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Lab1a {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		// Set scanner delimiter to a new line so whitespace is not used as delimiter
+		Scanner in = new Scanner(System.in).useDelimiter("\\n");
 
 		double monthlyInterestRate, monthlyPayment, totalPayment, principal, interest, balance;
 		int numberOfYears, month, annualInterestRate;
