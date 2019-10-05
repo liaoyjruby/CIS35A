@@ -2,8 +2,21 @@ import java.util.Scanner;
 
 public class Lab1a {
 
+	public static double checkNeg(double input) {
+		//Method for preventing negative value input
+		Scanner in = new Scanner(System.in).useDelimiter("\\n");
+		double result = 0.0;
+
+		while (input <= 0) {
+			System.out.printf("\nEnter a valid value.\n\nEnter value again: ");
+			input = in.nextDouble();
+		}
+		result = input;
+		return result;
+	}
+
 	public static void main(String[] args) {
-		// Set scanner delimiter to a new line so whitespace is not used as delimiter
+		// Scanner delimiter set to a new line so whitespace is not used as delimiter
 		Scanner in = new Scanner(System.in).useDelimiter("\\n");
 
 		double monthlyInterestRate, monthlyPayment, totalPayment, principal, interest, balance;
@@ -16,50 +29,43 @@ public class Lab1a {
 		System.out.printf("Enter loan amount: ");
 		// Prevent non-double balance input
 		while (!in.hasNextDouble()) {
-			System.out.printf("\nEnter a numerical value.\n\nEnter loan amount: ");
+			System.out.printf("\nEnter a numerical value.\n\nEnter loan amount (ex. 10000): ");
 			in.next();
 		}
 		balance = in.nextDouble();
 		// Prevent negative balance input
-		while (balance <= 0) {
-			System.out.printf("\nEnter a positive value.\n\nEnter loan amount: ");
-			balance = in.nextDouble();
-		}
+		balance = checkNeg(balance);
 
 		// Prompt for numberOfYears, check for validity
 		System.out.printf("\nEnter number of years: ");
 		// Prevent non-int numberOfYears input
 		while (!in.hasNextInt()) {
-			System.out.printf("\nEnter a whole number.\n\nEnter number of years: ");
+			System.out.printf("\nEnter a whole number.\n\nEnter number of years (ex. 1): ");
 			in.next();
 		}
 		numberOfYears = in.nextInt();
 		// Prevent negative numberOfYears input
-		while (numberOfYears <= 0) {
-			System.out.printf("\nEnter a positive value.\n\nEnter number of years: ");
-			numberOfYears = in.nextInt();
-		}
+		numberOfYears = (int) checkNeg(numberOfYears);
 
 		// Prompt for annualInterestRate, check for validity
 		System.out.printf("\nEnter annual interest rate: ");
 		// Prevent non-int annualInterestRate input
 		while (!in.hasNextInt()) {
-			System.out.printf("\nEnter a whole number.\n\nEnter annual interest rate: ");
+			System.out.printf("\nEnter a whole number.\n\nEnter annual interest rate (ex. 7): ");
 			in.next();
 		}
 		annualInterestRate = in.nextInt();
 		// Prevent out of bounds annualInterestRate input
-		while (annualInterestRate <= 0 || annualInterestRate >= 100) {
-			System.out.printf("\nEnter a valid number.\n\nEnter annual interest rate: ");
+		annualInterestRate = (int) checkNeg(annualInterestRate);
+		while (checkNeg(annualInterestRate) >= 100) {
+			System.out.printf("\nEnter a valid value.\n\nEnter value again: ");
 			annualInterestRate = in.nextInt();
 		}
-
 		monthlyInterestRate = ((double) annualInterestRate / 12.0) / 100.0;
 
 		// Reiterate inputs
 		if (numberOfYears > 1)
 			year = "years";
-
 		System.out.printf(
 				"\nLoan Amount: $%-10.2f\nNumber of Years: %-1d " + year + "\nAnnual Interest Rate: %-1d%%\n\n",
 				balance, numberOfYears, annualInterestRate);
