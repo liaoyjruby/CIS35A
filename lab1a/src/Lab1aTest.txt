@@ -1,4 +1,5 @@
-Lab 1a Test Runs
+LAB 1A TEST RUNS
+
 
 TEST 1: Textbook's sample run
 
@@ -32,7 +33,7 @@ Payment          Interest         Principal        Balance
 12               $5.02            $860.25          $0.00            
 
 
-TEST 2: Testing invalid negative inputs
+TEST 2: Input negative value
 
 Loan Amortization Schedule
 
@@ -208,7 +209,7 @@ Payment          Interest         Principal        Balance
 144              $1.61            $160.54          $0.00            
 
 
-TEST 3: Testing wrong datatype input
+TEST 3:  Input wrong data type
 
 Loan Amortization Schedule
 
@@ -252,7 +253,7 @@ Payment        Interest       Principal      Balance
 12             $0.56          $44.57         $0.00          
 
 
-TEST 4: Mixed testing - out-of-bounds inputs and wrong datatype input
+TEST 4: Mixed - out-of-bounds inputs and wrong data type input
 
 Loan Amortization Schedule
 

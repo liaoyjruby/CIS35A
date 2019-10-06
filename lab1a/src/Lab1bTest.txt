@@ -1,0 +1,58 @@
+LAB 1B TEST RUNS
+
+
+TEST 1: Input "4"
+
+Enter a positive whole number to approximate its square root (ex. 4): 4
+
+The approximate square root of 4 is 2.000000.
+
+
+TEST 2: Input "ugly" number
+
+Enter a positive whole number to approximate its square root (ex. 4): 123456
+
+The approximate square root of 123456 is 351.363060.
+
+
+TEST 3: Input wrong data type
+
+Enter a positive whole number to approximate its square root (ex. 4): 123.456
+
+Enter a positive whole number (ex. 13): four
+
+Enter a positive whole number (ex. 13): :)
+
+Enter a positive whole number (ex. 13): 13
+
+The approximate square root of 13 is 3.605551.
+
+
+TEST 4: Input negative value
+
+Enter a positive whole number to approximate its square root (ex. 4): -123456
+
+Enter a positive whole number.
+
+Enter value: 0
+
+Enter a positive whole number.
+
+Enter value: 9999
+
+The approximate square root of 9999 is 99.995000.
+
+
+TEST 4: Mixed - negative and wrong data type
+
+Enter a positive whole number to approximate its square root (ex. 4): zero
+
+Enter a positive whole number (ex. 13): two
+
+Enter a positive whole number (ex. 13): -13
+
+Enter a positive whole number.
+
+Enter value: 12345
+
+The approximate square root of 12345 is 111.108056.

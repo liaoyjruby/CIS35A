@@ -19,7 +19,7 @@ public class Lab1a {
 			in.next();
 		}
 		balance = in.nextDouble();
-		// Prevent negative balance input
+		// Ensure positive balance input
 		balance = checkNeg(balance);
 
 		// Prompt for numberOfYears, check for validity
@@ -30,7 +30,7 @@ public class Lab1a {
 			in.next();
 		}
 		numberOfYears = in.nextInt();
-		// Prevent negative numberOfYears input
+		// Ensure positive numberOfYears input
 		numberOfYears = (int) checkNeg(numberOfYears);
 
 		// Prompt for annualInterestRate
@@ -64,7 +64,7 @@ public class Lab1a {
 
 	}
 
-	// Preventing negative input value
+	// Ensure positive input value
 	public static double checkNeg(double input) {
 		Scanner in = new Scanner(System.in).useDelimiter("\\r\\n");
 		double result = 0.0;
@@ -95,7 +95,7 @@ public class Lab1a {
 
 	}
 
-	// Generate table along with calculations
+	// Generate table along with table calculations per payment
 	public static void tableGen(int numberOfYears, double monthlyInterestRate, double balance, double monthlyPayment) {
 		// Determine column width based on balance input length
 		int width = String.valueOf(balance).length() + 10;
