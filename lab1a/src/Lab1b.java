@@ -12,14 +12,11 @@ public class Lab1b {
 			in.next();
 		}
 		long input = in.nextLong();
-		
-		//Ensure positive input
+		// Ensure positive input
 		input = checkNeg(input);
 
 		double output = sqrt(input);
-
 		System.out.printf("\nThe approximate square root of %d is %f.", input, output);
-		//System.out.println("\n" + output * output);
 
 	}
 
@@ -33,7 +30,7 @@ public class Lab1b {
 		long output = input;
 		return output;
 	}
-	
+
 	// Calculate square root with the Babylonian method (pg. 239)
 	public static double sqrt(long input) {
 		double nextGuess, lastGuess = 1, diffGuess;

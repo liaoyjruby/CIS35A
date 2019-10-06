@@ -108,7 +108,7 @@ public class Lab1a {
 			double principal = monthlyPayment - interest;
 			balance = balance - principal;
 
-			//Print formatted table
+			// Print formatted table
 			System.out.printf(
 					"%-" + width + "d$%-" + (width - 1) + ".2f$%-" + (width - 1) + ".2f$%-" + (width - 1) + ".2f\n",
 					month, interest, principal, Math.abs(balance));
