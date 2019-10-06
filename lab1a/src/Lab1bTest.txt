@@ -32,15 +32,11 @@ TEST 4: Input negative value
 
 Enter a positive whole number to approximate its square root (ex. 4): -123456
 
-Enter a positive whole number.
+Enter a non-negative whole number.
 
 Enter value: 0
 
-Enter a positive whole number.
-
-Enter value: 9999
-
-The approximate square root of 9999 is 99.995000.
+The approximate square root of 0 is 0.000061.
 
 
 TEST 4: Mixed - negative and wrong data type

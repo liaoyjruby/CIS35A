@@ -8,7 +8,7 @@ public class Lab1b {
 		System.out.printf("Enter a positive whole number to approximate its square root (ex. 4): ");
 		// Prevent non-long input
 		while (!in.hasNextLong()) {
-			System.out.printf("\nEnter a positive whole number (ex. 13): ");
+			System.out.printf("\nEnter a non-negative whole number (ex. 13): ");
 			in.next();
 		}
 		long input = in.nextLong();
@@ -20,11 +20,11 @@ public class Lab1b {
 
 	}
 
-	// Ensure positive input value
+	// Ensure non-negative input value
 	public static long checkNeg(long input) {
 		Scanner in = new Scanner(System.in).useDelimiter("\\r\\n");
-		while (input <= 0) {
-			System.out.printf("\nEnter a positive whole number.\n\nEnter value: ");
+		while (input < 0) {
+			System.out.printf("\nEnter a non-negative whole number.\n\nEnter value: ");
 			input = in.nextLong();
 		}
 		long output = input;
