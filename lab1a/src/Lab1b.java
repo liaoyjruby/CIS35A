@@ -1,3 +1,10 @@
+/* Yi Jou (Ruby) Liao
+ * CIS 35A - Section 61Y
+ * Assignment 1 Part 2
+ * Due 6 October 2019
+ * Submitted 6 October 2019
+ */
+
 import java.util.Scanner;
 
 public class Lab1b {
