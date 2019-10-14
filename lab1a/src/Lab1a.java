@@ -11,7 +11,7 @@ public class Lab1a {
 
 	public static void main(String[] args) {
 		// Scanner delimiter set to a new line so whitespace is not used as delimiter
-		Scanner in = new Scanner(System.in).useDelimiter("\\r\\n");
+		Scanner in = new Scanner(System.in).useDelimiter("\\n");
 
 		double monthlyInterestRate, monthlyPayment, totalPayment, balance;
 		int numberOfYears, annualInterestRate;
