@@ -24,33 +24,33 @@ public class Driver {
 
 		// Person 3
 		Person a3 = new Person();
-		readData(a3); 
+		readData(a3);
 		a3.print();
 
 	}
 
 	// Prompt for and store data inputted through Scanner
 	public static void readData(Person a) {
-		//Prompt for and store name as string
+		// Prompt for and store name as string
 		System.out.printf("\n\nEnter full name: ");
 		a.setName(in.next());
-		
-		//Prompt for and store address as string
+
+		// Prompt for and store address as string
 		System.out.printf("\nEnter address: ");
 		a.setAddress(in.next());
-		
-		//Prompt for and store age as int
+
+		// Prompt for and store age as int
 		System.out.printf("\nEnter age (ex. 20): ");
-		//Check for valid int input
+		// Check for valid int input
 		while (!in.hasNextInt()) {
 			System.out.printf("\nEnter a whole number: ");
 			in.next();
 		}
 		a.setAge(in.nextInt());
 		a.setAge(checkNeg(a.getAge()));
-		
-		//Prompt for and store phone number as int
-		System.out.printf("\nEnter phone number (ex.4081234567): ");
+
+		// Prompt for and store phone number as int
+		System.out.printf("\nEnter 10-digit phone number (ex.4081234567): ");
 		while (!in.hasNextInt()) {
 			System.out.printf("\nEnter valid number (no punctuation): ");
 			in.next();
@@ -60,7 +60,7 @@ public class Driver {
 
 	}
 
-	//Ensure positive input value
+	// Ensure positive input value
 	public static int checkNeg(int input) {
 		int result = 0;
 		while (input <= 0) {
@@ -70,5 +70,4 @@ public class Driver {
 		result = input;
 		return result;
 	}
-
 }
