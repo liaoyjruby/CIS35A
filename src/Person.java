@@ -3,6 +3,7 @@ public class Person {
 	private String name, address, phone;
 	private int age;
 
+	// No-args constructor
 	public Person() {
 	}
 
@@ -69,7 +70,7 @@ public class Person {
 
 	// Prints all inputs for objects
 	public void print() {
-		System.out.printf("\nName: %s\nAddress: %s\nAge: %d\nPhone number: %s\n",formatName(name), formatName(address),
+		System.out.printf("\nName: %s\nAddress: %s\nAge: %d\nPhone number: %s\n", formatName(name), formatName(address),
 				age, formatPhone(phone));
 	}
 
