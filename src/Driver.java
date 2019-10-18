@@ -4,7 +4,7 @@ public class Driver {
 
 	// If running application on Linux/Unix/MacOS system, change to .useDelimiter("\\n")
 	// If running application on Windows system, change to .useDelimiter("\\r\\n")
-	static Scanner in = new Scanner(System.in).useDelimiter("\\n");
+	static Scanner in = new Scanner(System.in).useDelimiter("\\r\\n");
 
 	public static void main(String[] args) {
 		// Store each entry in Person[] array; maximum of 10 entries
@@ -80,7 +80,7 @@ public class Driver {
 	// Ensure 10 digit phone number input
 	public String checkLength(String input) {
 		while (input.length() < 10 || input.length() > 10) {
-			System.out.printf("\nPlease enter a 10 digit phone number (ex.4081234567):");
+			System.out.printf("\nPlease enter a 10 digit phone number (ex.4081234567): ");
 			input = in.next();
 		}
 		String result = input;
