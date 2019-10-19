@@ -2,9 +2,8 @@ import java.util.*;
 
 public class Driver {
 
-	// If running application on Linux/Unix/MacOS system, change to .useDelimiter("\\n")
 	// If running application on Windows system, change to .useDelimiter("\\r\\n")
-	static Scanner in = new Scanner(System.in).useDelimiter("\\r\\n");
+	static Scanner in = new Scanner(System.in).useDelimiter("\\n");
 	
 	public static void main(String[] args) {
 		// Store each entry in Person[] array; maximum of 10 entries
