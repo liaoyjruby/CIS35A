@@ -11,7 +11,7 @@ LAB 2B TEST RUNS
 TEST 1: Standard run of three coins with 20 tosses each
 
 
-Coin Tosser! :^)
+Coin Toss Simulator! :^)
 
 Enter number of times to toss coin: 20
 
@@ -99,7 +99,7 @@ Coin tosses complete!
 
 TEST RUN 2: Input invalid information
 
-Coin Tosser! :^)
+Coin Toss Simulator! :^)
 
 Enter number of times to toss coin: -100
 

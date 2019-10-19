@@ -4,7 +4,7 @@ public class Driver {
 	public static void main(String[] args) {
 		Simulation s1 = new Simulation();
 
-		System.out.printf("Coin Tosser! :^)");
+		System.out.printf("Coin Toss Simulator! :^)");
 		
 		//Toss Coin 1 "quarter" and print
 		Coin quarter = new Coin();
