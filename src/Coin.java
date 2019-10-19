@@ -14,8 +14,10 @@ public class Coin {
 	}
 
 	// Default constructor
-	public Coin(String sideUp) {
+	public Coin(String sideUp, int heads, int tails) {
 		this.sideUp = sideUp;
+		this.heads = heads;
+		this.tails = tails;
 	}
 
 	// Getters/setters

@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Simulation {
-	private int count;
+	private int count; // Stores number of tosses to make
 
 	static Scanner in = new Scanner(System.in);
 
@@ -9,7 +9,7 @@ public class Simulation {
 	public Simulation() {
 	}
 
-	// Loops for number of times specified by user
+	// Loops coin toss for number of times specified by user
 	public void tossForSimulation(Coin coin) {
 		System.out.printf("\n\nEnter number of times to toss coin: ");
 		// Ensure int input
@@ -17,11 +17,11 @@ public class Simulation {
 			System.out.printf("\nEnter a positive whole number (ex. 20): ");
 			in.next();
 		}
-		count = (in.nextInt());
+		count = in.nextInt(); // User inputs how many tosses they want to make
 
 		for (int i = 1; i <= count; i++) {
 			coin.toss();
-			System.out.printf("\nToss %d - %s", i, coin.getSideUp());
+			System.out.printf("\nToss %d - %s", i, coin.getSideUp()); // Prints toss # and result of individual toss
 		}
 	}
 
