@@ -43,7 +43,7 @@ public class Coin {
 		this.tails = tails;
 	}
 
-	//Randomly changes sideUp of coin each time method is run
+	// Randomly changes sideUp of coin each time method is run
 	public void toss() {
 		int random = ran.nextInt(2); // Will randomly be "0 or "1"
 		if (random == 0) {

@@ -12,13 +12,13 @@ public class Simulation {
 	// Loops for number of times specified by user
 	public void tossForSimulation(Coin coin) {
 		System.out.printf("\n\nEnter number of times to toss coin: ");
-		//Ensure int input
+		// Ensure int input
 		while (!in.hasNextInt()) {
 			System.out.printf("\nEnter a positive whole number (ex. 20): ");
 			in.next();
 		}
 		count = (in.nextInt());
-		
+
 		for (int i = 1; i <= count; i++) {
 			coin.toss();
 			System.out.printf("\nToss %d - %s", i, coin.getSideUp());
