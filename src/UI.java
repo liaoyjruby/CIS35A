@@ -1,38 +1,55 @@
 import java.util.*;
+
 // for user friendly interface with program
 public class UI {
-	
+
 	static Scanner in = new Scanner(System.in);
 	static Store st = new Store();
-	
-	public UI() {
-		System.out.printf("Welcome to Franchise Analyzer 9000!\n\nEnter an option: ");
 
-		int option = in.nextInt();
-		st.print(option);
+	UI() {
+		System.out.printf("Welcome to Franchise Analyzer 9000!");
+	}
+
+	public void menu(Franchise f) {
+		System.out.printf("\n\nData available for %d stores over past 5 weeks.\n\nAnalyze store:", f.numberOfStores());
+		System.out.printf(
+				  "\n  1. San Jose - Saratoga Ave."
+				+ "\n  2. San Jose - Story Rd."
+				+ "\n  3. Cupertino"
+				+ "\n  4. Palo Alto"
+				+ "\n  5. Mountain View"
+				+ "\n  6. Milpitas");
+		System.out.printf("\n\nSelect a store (1 - %d):  ", f.numberOfStores());
+		int store = in.nextInt(); // Stores which store chosen by user
+		while (store < 1 || store > 6) {
+			System.out.printf("\nEnter a number between 1 and %d:  ", f.numberOfStores());
+			store = in.nextInt();
+		}
+
+		System.out.printf("\nStore %d selected.", store);
+
+		int option = 0; // Stores which option chosen by user
+		do { // Allows for return to data analysis menu
+			System.out.printf("\n\nData analysis for Store %d:"
+					+ "\n  1. Total sales by week"
+					+ "\n  2. Average daily sales by week"
+					+ "\n  3. Total sales for all weeks"
+					+ "\n  4. Average weekly sales"
+					+ "\n  5. Week with highest sales"
+					+ "\n  6. Week with lowest sales"
+					+ "\n  7. Analyze all (1 - 6)"
+					+ "\n  8. Return to store selection"
+					+ "\n\nChoose analysis (1 - 8): ", store);
+			option = in.nextInt();
+			while (option < 1 || option > 8) { // Check if option input is valid
+				System.out.printf("\nEnter a number between 1 and 8:  ");
+				store = in.nextInt();
+			}
+			if (option == 8)
+				menu(f); // Allows for return to store selection menu
+			st.print(f, store, option);
+			System.out.printf("\n\nEnter \"8\" to return to analysis menu: ");
+			option = in.nextInt();
+		} while (option == 8);
 	}
 }
-
-	// welcome menu
-	// can make user friendly by giving each store a location
-	// loop for entering store number
-	// ex. if they enter 9, it's invalid
-	// select operation
-	// use loop to check for number validation (make sure it's within range)
-		// don't need to do data type validation lol
-	
-	/*
-	 * Start with a user-friendly invitation message - 
-Welcome to Franchise App etc....
-We have data for 6 stores for last 5 weeks.
-Loop
-Select a store # you want to see analytics for - enter <1 through 6> 9
-Select operation - 
-1. Enter 1 for total sales for each week 
-2. Enter 2 for average daily sales for each week
-3. Enter 3 for total sales for all weeks
-4. Enter 4 for average weekly sales
-5. Enter 5 for week with the highest amount in sales. 
-6. Enter 6 for week with the lowest amount in sales. 
-7. Enter 7 for all analytical data. (1 through 6)
-*/

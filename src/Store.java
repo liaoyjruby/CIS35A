@@ -1,8 +1,5 @@
-// add 7 - 8 methods here
-// add 6 instance variables here
-
 public class Store {
-	private float[][] salesByWeek; // data populated within sales by week
+	private float[][] salesByWeek; // Data populated by FileIO.java
 	private float[] totalSalesByWeek; // a
 	private float[] avgDailySales; // b
 	private float totalSales; // c
@@ -10,16 +7,10 @@ public class Store {
 	private float[] highestSaleWeek; // e
 	private float[] lowestSaleWeek; // f
 
-	// all calculated values should be store in instance variables of Store class
-
-	// two dim object that's 5 x 7 because 35 entries for each store=
-	// # of rows = week, # of days = columns
 	Store() {
 		salesByWeek = new float[5][7];
 	}
 
-	// getter and setters
-	// setsaleforweekdayintersection(int week, int day, float sale)
 	public void setsaleforweekdayintersection(int week, int day, float sale) {
 		salesByWeek[week][day] = sale;
 	}
@@ -33,16 +24,8 @@ public class Store {
 		}
 	}
 
-	// ** can only do this with instance variables, and each one happens in a
-	// separate method
-	// float [] getsalesforentireweek(int week)
-	// float getsaleforweekdayintersection(int week, int day)
-	// businessmethod
-	// a. totalsalesforweek - add sales of each week sum each j of that i
-	// access one i frist, then
-	// if you do a, B through F are based on A
 	public float[] totalSalesByWeek() { // store sum of week's days into single dim array
-		int weeks = 5; // find better way to count # of wks?
+		int weeks = 5;
 		totalSalesByWeek = new float[weeks];
 		for (int i = 0; i < weeks; i++) {
 			float weekSum = 0;
@@ -55,19 +38,14 @@ public class Store {
 
 	}
 
-	// b. avgsalesforweek -
-	// take all values by week and divide by 7 to get daily avg
 	public float[] avgDailySalesByWeek() {
 		avgDailySales = new float[totalSalesByWeek.length];
 		for (int i = 0; i < totalSalesByWeek.length; i++) {
 			avgDailySales[i] = totalSalesByWeek[i] / 7;
 		}
 		return avgDailySales;
-
 	}
 
-	// c. totalsalesforallweeks - everything added together
-	// take a and sum it up!
 	public float totalSales() {
 		for (int i = 0; i < totalSalesByWeek.length; i++) {
 			totalSales += totalSalesByWeek[i];
@@ -75,8 +53,6 @@ public class Store {
 		return totalSales;
 	}
 
-	// d. averageweeklysales -
-	// take b and add then divide by 5 ? to get everything together
 	public float avgWeeklySales() {
 		float avgSum = 0;
 		for (int i = 0; i < avgDailySales.length; i++) {
@@ -86,73 +62,84 @@ public class Store {
 		return avgWeeklySales;
 	}
 
-	// e. weekwithhighestsaleamt
-	// highest value of a
-	public float[] highestSaleWeek() { // [1] is for week #, [2] is for value at week #
+	public float[] highestSaleWeek() { // [0] is for week #, [1] is for value at week #
 		highestSaleWeek = new float[2];
-		highestSaleWeek[1] = selectSort(totalSalesByWeek)[totalSalesByWeek.length - 1]; // Take last value of
+		highestSaleWeek[1] = selectSort(totalSalesByWeek)[totalSalesByWeek.length - 1]; // Last value of
 																						// totalSalesByWeek sorted in
 																						// ascending order
-		highestSaleWeek[0] = seqSearch(totalSalesByWeek, highestSaleWeek[1]);
+		highestSaleWeek[0] = seqSearch(totalSalesByWeek, highestSaleWeek[1]) + 1;
 		return highestSaleWeek;
 	}
 
-	// f. weekwithlowestsaleamt
-	// lowest value of a
-	public float[] lowestSaleWeek() { // [1] is for week #, [2] is for value at week #
+	public float[] lowestSaleWeek() { // [0] is for week #, [1] is for value at week #
 		lowestSaleWeek = new float[2];
-		lowestSaleWeek[1] = selectSort(totalSalesByWeek)[0]; // Take first value of totalSalesByWeek sorted in ascending
+		lowestSaleWeek[1] = selectSort(totalSalesByWeek)[0]; // First value of totalSalesByWeek sorted in ascending
 																// order
 		lowestSaleWeek[0] = seqSearch(totalSalesByWeek, lowestSaleWeek[1]) + 1;
 		return lowestSaleWeek;
 	}
 
-	// call a through f, does all 6 business methods at the same time
-	public void analyzeResults() { // run all sales calculations
+	public void analyzeResults() { 
 		totalSalesByWeek(); // float[5]
 		avgDailySalesByWeek(); // float[5]
 		totalSales(); // float
 		avgWeeklySales(); // float
 		highestSaleWeek(); // float[2]
 		lowestSaleWeek(); // float[2]
-
 	}
 
-	// print(int option) --> option is value btwn 1 through 7
-	// 1 - print a; 2 - print b; ...
-	public void print(int option) {
+	public void print(Franchise f, int store, int option) {
 		switch (option) {
 		case 1:
-			System.out.printf("Total sales by week:\n");
-			for (int i = 0; i < totalSalesByWeek.length; i++) {
-				System.out.printf("  Week %d: $%1.2f", i + 1, totalSalesByWeek[i]);
+			System.out.printf("\nTotal sales by week:");
+			for (int i = 0; i < f.getStores(store).totalSalesByWeek.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).totalSalesByWeek[i]);
 			}
 			break;
 		case 2:
-			System.out.printf("Average daily sale by week:\n");
-			for (int i = 0; i < avgDailySales.length; i++) {
-				System.out.printf("  Week %d: $%1.2f", i + 1, avgDailySales[i]);
+			System.out.printf("\nAverage daily sale by week:");
+			for (int i = 0; i < f.getStores(store).avgDailySales.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).avgDailySales[i]);
 			}
 			break;
 		case 3:
-			System.out.printf("Total sales for all weeks: $%1.2f", totalSales);
+			System.out.printf("\nTotal sales for all weeks: $%1.2f", f.getStores(store).totalSales);
 			break;
 		case 4:
-			System.out.printf("Average weekly sales: $%1.2f", avgWeeklySales);
+			System.out.printf("\nAverage weekly sales: $%1.2f", f.getStores(store).avgWeeklySales);
 			break;
 		case 5:
-			System.out.printf("Week with highest sales:\n Week %d: $%1.2f", (int) highestSaleWeek[1], highestSaleWeek[2]);
+			System.out.printf("\nWeek with highest sales:\n Week %d: $%1.2f",
+					(int) f.getStores(store).highestSaleWeek[0], f.getStores(store).highestSaleWeek[1]);
 			break;
 		case 6:
-			System.out.printf("Week with lowest sales:\n Week %d: $%1.2f", (int) lowestSaleWeek[1], lowestSaleWeek[2]);
+			System.out.printf("\nWeek with lowest sales:\n Week %d: $%1.2f", (int) f.getStores(store).lowestSaleWeek[0],
+					f.getStores(store).lowestSaleWeek[1]);
 			break;
 		case 7:
-			System.out.printf("Showing all: \n\n");
-		default: System.out.printf("Error!!!!!");
-
-		}
-		// option is value btwn 1 through 7, with each option calling a method
-
+			System.out.printf("\nShowing all: ");
+			//Case 1
+			System.out.printf("\n\nTotal sales by week:");
+			for (int i = 0; i < f.getStores(store).totalSalesByWeek.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).totalSalesByWeek[i]);
+			}
+			//Case 2
+			System.out.printf("\n\nAverage daily sale by week:");
+			for (int i = 0; i < f.getStores(store).avgDailySales.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).avgDailySales[i]);
+			}
+			//Case 3
+			System.out.printf("\n\nTotal sales for all weeks: $%1.2f", f.getStores(store).totalSales);
+			//Case 4
+			System.out.printf("\n\nAverage weekly sales: $%1.2f", f.getStores(store).avgWeeklySales);
+			//Case 5
+			System.out.printf("\n\nWeek with highest sales:\n  Week %d: $%1.2f",
+					(int) f.getStores(store).highestSaleWeek[0], f.getStores(store).highestSaleWeek[1]);
+			//Case 6
+			System.out.printf("\n\nWeek with lowest sales:\n  Week %d: $%1.2f", (int) f.getStores(store).lowestSaleWeek[0],
+					f.getStores(store).lowestSaleWeek[1]);
+			break;
+		}		
 	}
 
 	// Sequential search
@@ -172,7 +159,6 @@ public class Store {
 														// against a next one
 			float current = arrOut[i]; // Value of min
 			int currentIndex = i; // Index of min
-
 			// Finds min in list
 			for (int j = i + 1; j < arrOut.length; j++) {
 				if (current > arrOut[j]) {
@@ -180,7 +166,6 @@ public class Store {
 					currentIndex = j; // changes current index to index of minimum value
 				}
 			}
-
 			// Swap current spot with identified min value;
 			if (currentIndex != i) {
 				arrOut[currentIndex] = arrOut[i];
