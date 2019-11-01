@@ -88,56 +88,56 @@ public class Store {
 		lowestSaleWeek(); // float[2]
 	}
 
-	public void print(Franchise f, int store, int option) {
+	public void print(int option) {
 		switch (option) {
 		case 1:
 			System.out.printf("\nTotal sales by week:");
-			for (int i = 0; i < f.getStores(store).totalSalesByWeek.length; i++) {
-				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).totalSalesByWeek[i]);
+			for (int i = 0; i < totalSalesByWeek.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, totalSalesByWeek[i]);
 			}
 			break;
 		case 2:
 			System.out.printf("\nAverage daily sale by week:");
-			for (int i = 0; i < f.getStores(store).avgDailySales.length; i++) {
-				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).avgDailySales[i]);
+			for (int i = 0; i < avgDailySales.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, avgDailySales[i]);
 			}
 			break;
 		case 3:
-			System.out.printf("\nTotal sales for all weeks: $%1.2f", f.getStores(store).totalSales);
+			System.out.printf("\nTotal sales for all weeks: $%1.2f", totalSales);
 			break;
 		case 4:
-			System.out.printf("\nAverage weekly sales: $%1.2f", f.getStores(store).avgWeeklySales);
+			System.out.printf("\nAverage weekly sales: $%1.2f", avgWeeklySales);
 			break;
 		case 5:
 			System.out.printf("\nWeek with highest sales:\n Week %d: $%1.2f",
-					(int) f.getStores(store).highestSaleWeek[0], f.getStores(store).highestSaleWeek[1]);
+					(int) highestSaleWeek[0], highestSaleWeek[1]);
 			break;
 		case 6:
-			System.out.printf("\nWeek with lowest sales:\n Week %d: $%1.2f", (int) f.getStores(store).lowestSaleWeek[0],
-					f.getStores(store).lowestSaleWeek[1]);
+			System.out.printf("\nWeek with lowest sales:\n Week %d: $%1.2f", (int) lowestSaleWeek[0],
+					lowestSaleWeek[1]);
 			break;
 		case 7:
 			System.out.printf("\nShowing all: ");
 			//Case 1
 			System.out.printf("\n\nTotal sales by week:");
-			for (int i = 0; i < f.getStores(store).totalSalesByWeek.length; i++) {
-				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).totalSalesByWeek[i]);
+			for (int i = 0; i < totalSalesByWeek.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, totalSalesByWeek[i]);
 			}
 			//Case 2
 			System.out.printf("\n\nAverage daily sale by week:");
-			for (int i = 0; i < f.getStores(store).avgDailySales.length; i++) {
-				System.out.printf("\n  Week %d: $%1.2f", i + 1, f.getStores(store).avgDailySales[i]);
+			for (int i = 0; i < avgDailySales.length; i++) {
+				System.out.printf("\n  Week %d: $%1.2f", i + 1, avgDailySales[i]);
 			}
 			//Case 3
-			System.out.printf("\n\nTotal sales for all weeks: $%1.2f", f.getStores(store).totalSales);
+			System.out.printf("\n\nTotal sales for all weeks: $%1.2f", totalSales);
 			//Case 4
-			System.out.printf("\n\nAverage weekly sales: $%1.2f", f.getStores(store).avgWeeklySales);
+			System.out.printf("\n\nAverage weekly sales: $%1.2f", avgWeeklySales);
 			//Case 5
 			System.out.printf("\n\nWeek with highest sales:\n  Week %d: $%1.2f",
-					(int) f.getStores(store).highestSaleWeek[0], f.getStores(store).highestSaleWeek[1]);
+					(int) highestSaleWeek[0], highestSaleWeek[1]);
 			//Case 6
-			System.out.printf("\n\nWeek with lowest sales:\n  Week %d: $%1.2f", (int) f.getStores(store).lowestSaleWeek[0],
-					f.getStores(store).lowestSaleWeek[1]);
+			System.out.printf("\n\nWeek with lowest sales:\n  Week %d: $%1.2f", lowestSaleWeek[0],
+					lowestSaleWeek[1]);
 			break;
 		}		
 	}
