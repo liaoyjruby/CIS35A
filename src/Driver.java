@@ -1,4 +1,3 @@
-
 public class Driver {
 
 	public static void main(String[] args) {
@@ -15,13 +14,12 @@ public class Driver {
 			storeChoice = UI.storeChoice();
 			if (storeChoice == 7)
 				break; // Exits to end of program
-			Store store = f.getStores(storeChoice - 1); // Saves which store is chosen
 
 			for (int dataChoice = 0; dataChoice != 8;) { // For looping data analysis menu
 				UI.dataMenu(storeChoice); // Displays analysis menu
 				dataChoice = UI.dataChoice();
 				if (dataChoice != 8) { // Allows for exit to either data analysis menu or store selection
-					store.print(dataChoice);
+					f.getStores(storeChoice - 1).print(dataChoice);
 					System.out.printf("\n\nNavigation:"
 							+ "\n  7. Return to data analysis menu"
 							+ "\n  8. Return to store selection "

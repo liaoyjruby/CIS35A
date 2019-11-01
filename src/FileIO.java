@@ -1,12 +1,11 @@
-// Import necessary libraries
-import java.io.*;
+import java.io.*; // Import necessary libraries
 import java.util.*;
 
 public class FileIO {
 	private String fname = null; // Instance variable for file name
 	private boolean DEBUG = false; // Flag to be used to turn on printlns or turn off; debugging information, see what's being processed
 
-	public FileIO(String fname) { //constructor --> no default bc file name can't be null
+	public FileIO(String fname) { // Constructor --> no default b/c file name can't be null
 		this.fname = fname;
 	}
 
@@ -46,7 +45,7 @@ public class FileIO {
 					} // End inner if
 				} // End if
 			} // End loop
-			buff.close(); // If it's on end of line (eof = true), file closes
+			buff.close(); // If it's on end of line (eof == true), file closes
 		} catch (Exception e) {
 			System.out.println("Error -- " + e.toString());
 		}
@@ -57,8 +56,8 @@ public class FileIO {
 		Store tstore = new Store(); // Local variable
 		String s1  =  "";
 		float sale = 0.0f; // Populate
-		int week = 0; // Populate row of 2d array
-		int day = 0; // Populate column of 2d array
+		int week = 0; // Populate row of 2D array
+		int day = 0; // Populate column of 2D array
 		StringTokenizer st = new StringTokenizer(temp); // Temp variable has 35 values, so string tokenizer chops long string into small tokens b/c delimited by spaces
 	    while (st.hasMoreTokens()) { // Are there values or is it null? Will become null when all tokens are taken through .nextToken()
 	         for(day=0;day<7;day++) // For loop breaks single line into five rows

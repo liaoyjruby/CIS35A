@@ -112,11 +112,11 @@ public class Store {
 			System.out.printf("\nAverage weekly sales: $%1.2f", avgWeeklySales);
 			break;
 		case 5:
-			System.out.printf("\nWeek with highest sales:\n Week %d: $%1.2f", (int) highestSaleWeek[0],
+			System.out.printf("\nWeek with highest sales:\n  Week %d: $%1.2f", (int) highestSaleWeek[0],
 					highestSaleWeek[1]);
 			break;
 		case 6:
-			System.out.printf("\nWeek with lowest sales:\n Week %d: $%1.2f", (int) lowestSaleWeek[0],
+			System.out.printf("\nWeek with lowest sales:\n  Week %d: $%1.2f", (int) lowestSaleWeek[0],
 					lowestSaleWeek[1]);
 			break;
 		case 7: // Code for previous cases copied to Case 7

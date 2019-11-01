@@ -7,11 +7,11 @@ public class UI {
 	static Scanner in = new Scanner(System.in);
 
 	UI() { // Constructor with program title
-		System.out.printf("~ PARIS BAGUETTE SALES ANALYZER ~");
+		System.out.printf("~ PARIS BAGUETTE SALES ANALYZER ~\n");
 	}
 
 	public void storeMenu() { // Displays store menu options
-		System.out.printf("\n\nData available for 6 stores over past 5 weeks.\n\nLocations:");
+		System.out.printf("\nData available for 6 stores over past 5 weeks.\n\nLocations:");
 		System.out.printf("\n  1. %s\n  2. %s\n  3. %s\n  4. %s\n  5. %s\n  6. %s\nNavigation:\n  7. Exit program", s[0], s[1], s[2], s[3], s[4], s[5]);
 	}
 
