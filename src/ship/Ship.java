@@ -97,7 +97,7 @@ public class Ship {
 		System.out.printf("\nSize: %d square feet\n  (%d ft x %d ft)", area, length, width);
 	}
 
-	public void journey() { // Prints location / path of ship
+	public void journey() { // Prints location or path of ship
 		if (departingPort.equals(arrivalPort)) {
 			System.out.printf("\n>> %s is currently docked at %s", name, departingPort);
 		} else {

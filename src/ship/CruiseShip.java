@@ -34,16 +34,16 @@ public class CruiseShip extends Ship {
 		this.ticketPrice = ticketPrice;
 	}
 	
+	public void setPorts() { // Overridden; randomly generate arrival/departure ports for ship
+		int ran1 = random.nextInt(6), ran2 = random.nextInt(6); // Randomly generated values to choose ports
+		String[] ports = { "Glacier Bay", "Avignon", "Bora Bora", "Singapore", "Vienna", "Vancouver" }; // Different ports for Cruise
+		setDepartingPort(ports[ran1]);
+		setArrivalPort(ports[ran2]);
+	}
+	
 	public void properties() { // Overridden; prints Ship properties + Cruise Ship properties
 		super.properties();
 		System.out.printf("\nNumber of rooms: %d\nTicket price: $%.2f\n  Cruise tier: %s\n  Buffet menu: %s\n  Entertainment: %s", numberOfRooms,
 				ticketPrice, cruiseTier, buffetMenu, musician);
-	}
-	
-	public void setPorts() { // Overridden; randomly generate arrival/departure ports for ship
-		int ran1 = random.nextInt(6), ran2 = random.nextInt(6);
-		String[] ports = { "Glacier Bay", "Avignon", "Bora Bora", "Singapore", "Vienna", "Vancouver" }; // Different ports for Cruise
-		setDepartingPort(ports[ran1]);
-		setArrivalPort(ports[ran2]);
 	}
 }

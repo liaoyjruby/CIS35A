@@ -30,6 +30,13 @@ public class CargoShip extends Ship {
 
 	public void setLoadingMethod(String loadingMethod) {
 		this.loadingMethod = loadingMethod;
+	}	
+	
+	public void setPorts() { // Overridden method; randomly generate arrival/departure ports for cargo ship
+		int ran1 = random.nextInt(6), ran2 = random.nextInt(6); // Randomly generated values to choose ports
+		String[] ports = { "Shanghai", "Singapore", "Hong Kong", "Busan", "Dubai", "Los Angeles" }; // Different ports for Cargo
+		setDepartingPort(ports[ran1]);
+		setArrivalPort(ports[ran2]);
 	}
 
 	public void properties() { // Overridden method; prints Ship properties + Cargo Ship properties
@@ -37,12 +44,4 @@ public class CargoShip extends Ship {
 		System.out.printf("\nContainer capacity: %d\nCargo type: %s\nCargo value: $%.2f\nNumber of cranes: %d\nLoading method: %s",
 				numberOfContainers, cargoType, cargoValue, numberOfCranes, loadingMethod);
 	}
-	
-	public void setPorts() { // Overridden method; randomly generate arrival/departure ports for cargo ship
-		int ran1 = random.nextInt(6), ran2 = random.nextInt(6);
-		String[] ports = { "Shanghai", "Singapore", "Hong Kong", "Busan", "Dubai", "Los Angeles" }; // Different ports for Cargo
-		setDepartingPort(ports[ran1]);
-		setArrivalPort(ports[ran2]);
-	}
-
 }
