@@ -25,6 +25,7 @@ public class CruiseShip extends Ship {
 		numberOfRooms = (getArea() / 200) * 5; // Arbitrary value; each cabin is ~200 sq ft with 5 stories of cabins
 	}
 
+	// Getters/setters
 	public double getTicketPrice() {
 		return ticketPrice;
 	}
@@ -41,7 +42,7 @@ public class CruiseShip extends Ship {
 	
 	public void setPorts() { // Overridden; randomly generate arrival/departure ports for ship
 		int ran1 = random.nextInt(6), ran2 = random.nextInt(6);
-		String[] ports = { "Glacier Bay", "Avignon", "Bora Bora", "Singapore", "Vienna", "Vancouver" }; // Different set of ports for Cruise
+		String[] ports = { "Glacier Bay", "Avignon", "Bora Bora", "Singapore", "Vienna", "Vancouver" }; // Different ports for Cruise
 		setDepartingPort(ports[ran1]);
 		setArrivalPort(ports[ran2]);
 	}

@@ -1,18 +1,10 @@
 package ship;
 
-import java.text.*;
-
 public class CargoShip extends Ship {
 	private String cargoType, loadingMethod;
 	private int numberOfCranes, numberOfContainers;
 	private double cargoValue;
 
-	   static public void customFormat(String pattern, double value ) {
-		      DecimalFormat myFormatter = new DecimalFormat(pattern);
-		      String output = myFormatter.format(value);
-		      System.out.println(value + "  " + pattern + "  " + output);
-		   }
-	   
 	public CargoShip(int length, int width, String name, String owner, String cargoType, String loadingMethod) {
 		super(length, width, name, owner);
 		setPorts();
@@ -23,6 +15,7 @@ public class CargoShip extends Ship {
 		cargoValue = numberOfContainers * 1234567.89; // Arbitrary value for value per container
 	}
 
+	//Getters/setters
 	public String getCargoType() {
 		return cargoType;
 	}
@@ -39,15 +32,15 @@ public class CargoShip extends Ship {
 		this.loadingMethod = loadingMethod;
 	}
 
-	public void properties() { // Prints Ship properties + Cargo Ship properties
+	public void properties() { // Overridden method; prints Ship properties + Cargo Ship properties
 		super.properties();
-		System.out.printf("Container capacity: %d\nCargo type: %s\nCargo value: $%.2f\nNumber of cranes: %d\nLoading method: %s",
+		System.out.printf("\nContainer capacity: %d\nCargo type: %s\nCargo value: $%.2f\nNumber of cranes: %d\nLoading method: %s",
 				numberOfContainers, cargoType, cargoValue, numberOfCranes, loadingMethod);
 	}
 	
-	public void setPorts() { // Randomly generate arrival/departure ports for ship
+	public void setPorts() { // Overridden method; randomly generate arrival/departure ports for cargo ship
 		int ran1 = random.nextInt(6), ran2 = random.nextInt(6);
-		String[] ports = { "Shanghai", "Singapore", "Hong Kong", "Busan", "Dubai", "Los Angeles" }; // Different set of ports for Cargo
+		String[] ports = { "Shanghai", "Singapore", "Hong Kong", "Busan", "Dubai", "Los Angeles" }; // Different ports for Cargo
 		setDepartingPort(ports[ran1]);
 		setArrivalPort(ports[ran2]);
 	}
