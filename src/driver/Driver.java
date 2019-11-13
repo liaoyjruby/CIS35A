@@ -7,7 +7,7 @@ public class Driver {
 		// Ship parameters: int length, int width, String name, String owner
 		shipArray[0] = new Ship(100, 10, "Normandy", "Shepard");
 		shipArray[1] = new Ship(123, 12, "Adrestia", "Kassandra");
-		// Cargo ship parameters: int length, int width, String name, String owner, String cargoType, String loadingMethod,int numberOfCranes, int numberOfContainers, double cargoValue
+		// Cargo ship parameters: int length, int width, String name, String owner, String cargoType, String loadingMethod
 		shipArray[2] = new CargoShip(1300, 200, "Bubboat", "Bubbles Shipping Co.", "Canned fish", "Air dropped");
 		shipArray[3] = new CargoShip(1234, 123, "Palamecia", "Sanctum Skyfleet", "Military weapons", "Ramp loaded");
 		// Cruise ship parameters: int length, int width, String name, String owner, double ticketPrice
