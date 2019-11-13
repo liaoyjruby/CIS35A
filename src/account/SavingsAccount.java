@@ -31,6 +31,10 @@ public class SavingsAccount {
 	protected static int getAnnualInterestRate() {
 		return annualInterestRate;
 	}
+	
+	protected static void modifyInterestRate(int newIntRate) { // Change interest rate
+		annualInterestRate = newIntRate;
+	}
 
 	protected void calculateMonthlyInterest() { // Calculates interest for each month and adds to balance
 		double monthlyIntRate = (double) annualInterestRate / 1200; // Divided by 12 months * 100%
@@ -49,9 +53,4 @@ public class SavingsAccount {
 		savingsBalance -= withdraw;
 		System.out.printf("\n\nAmount withdrawn: $%.2f\n(%d) Balance: $%.2f", withdraw, accountNumber, savingsBalance);
 	}
-
-	protected static void modifyInterestRate(int newIntRate) { // Change interest rate
-		annualInterestRate = newIntRate;
-	}
-
 }
