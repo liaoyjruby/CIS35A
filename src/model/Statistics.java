@@ -1,11 +1,13 @@
 package model;
 
 public class Statistics {
-	private int [] lowscores = new int [5];
-	private int [] highscores = new int [5];
-	private float [] avgscores = new float [5];
+	private int [] lowScores = new int [5];
+	private int [] highScores = new int [5];
+	private float [] avgScores = new float [5];
 
-	void findlow(Student [] a) {
+	public Statistics() {	} //Constructor
+
+	void findLow(Student [] a) {
 	/* This method will find the lowest score and store it in an array names lowscores. 
 		nest for loop
 			for each quiz score(i) // quiz score is outer loop
@@ -19,11 +21,11 @@ public class Statistics {
 
 	}
 
-	void findhigh(Student [] a) {
+	void findHigh(Student [] a) {
 	/* This method will find the highest score and store it in an array names highscores. */
 	}
 
-	void findavg(Student [] a) {
+	void findAvg(Student [] a) {
 	/* This method will find avg score for each quiz and store it in an array names avgscores. */
 	}
 
