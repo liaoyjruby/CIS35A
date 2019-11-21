@@ -6,7 +6,7 @@ Submitted 20 November 2019
 
 LAB 5 - Student Data FileIO
 
-1) Open Lab5 files. Change the String in line 15 of file Driver.java to the fully-qualified file path of the location of the StudentData.txt file on your computer so the program can access data correctly. Run Driver.java as Java application. 
+1) Open Lab5 files. Change the String in line 13 of file Driver.java to the fully-qualified file path of the location of the StudentData.txt file on your computer so the program can access data correctly. Run Driver.java as Java application. 
 
 2) Console will display analysis results of StudentData.txt.
 
