@@ -12,9 +12,9 @@ LAB 5 - Student Data FileIO
 
 3) To change result printed, change the integer in line 28 method printStats(int) to "1" for low score results, to "2" for high score results, to "3" for average score results, and to "4" to show all.
 
-4) To access DEBUG mode, change the value of the boolean DEBUG on line 7 to equal "true". 
+4) To access DEBUG mode, change the value of the boolean DEBUG on line 7 of FileIO.java to equal "true". 
 Console will print:
   1) Lines of StudentData.txt as they are being read by FileIO
   2) Each student's ID and quiz score record as stored in Student[] dataArray
-  3) Number of student records read
+  3) Number of student records stored
   4) Every printStats() option

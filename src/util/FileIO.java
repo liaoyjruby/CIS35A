@@ -2,13 +2,17 @@ package util;
 
 import java.io.*; // FileReader, BufferedReader
 import java.util.*; // StringTokenizer
-
-import driver.Driver; // For accessing DEBUG variable
 import model.Student; // For creating Student object
 
 public class FileIO {
+	
+	private boolean DEBUG = false;
 
 	public FileIO() { // Constructor
+	}
+	
+	public boolean isDEBUG() { // Getter for DEBUG value
+		return DEBUG;
 	}
 
 	public Student[] readFile(String fileName, Student[] dataArr) {
@@ -23,7 +27,7 @@ public class FileIO {
 				if (line == null) // When line is empty, end of file is reached and loop is exited
 					eof = true;
 				else {
-					if (Driver.DEBUG) // Only prints what is read when DEBUG = true
+					if (DEBUG) // Only prints what is read when DEBUG = true
 						System.out.println("Reading " + line);
 					if (counter > 1 && counter <= 41) // Skips first line of file, the data table header
 						// Creates student object in Student[] up to the 40th record in .txt
