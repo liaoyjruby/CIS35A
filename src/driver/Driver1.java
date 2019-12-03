@@ -3,7 +3,7 @@ package driver;
 import model.*; // Student and Statistics class
 import util.*; // FileIO class
 
-public class Driver {
+public class Driver1 {
 	public static void main(String[] args) {
 
 		Student[] dataArr = new Student[40]; // Student array with max 40 records
@@ -17,7 +17,7 @@ public class Driver {
 		stats.findHigh(dataArr);
 		stats.findAvg(dataArr);
 		if (IO.isDEBUG()) { // Change DEBUG in line 9 FileIO.java to "true" to access
-			Driver d = new Driver();
+			Driver1 d = new Driver1();
 			// Print raw student data saved to dataArr
 			d.printArray(dataArr, IO.isDEBUG());
 			// to "true" to check other options for printStats()

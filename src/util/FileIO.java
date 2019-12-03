@@ -53,7 +53,8 @@ public class FileIO {
 			}
 			student.setScores(scoreArr); // Set constructed quiz score array to student's score array
 		}
-		return student;
-	}
+		return stud
+	
+	// serialize f
 
 }
