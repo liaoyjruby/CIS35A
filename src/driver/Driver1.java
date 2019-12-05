@@ -8,9 +8,9 @@ public class Driver1 {
 
 		Student[] dataArr = new Student[40]; // Student array with max 40 records
 		FileIO IO = new FileIO();
-		// Linux path: "/home/ruby/git/Lab5/StudentData.txt"
-		// Windows path: "C:\Users\rubsy\git\Lab5\StudentData.txt"
-		dataArr = IO.readFile("/home/ruby/git/Lab5/StudentData.txt", dataArr);
+		// Linux path: "/home/ruby/git/Lab6/data/input/StudentData1.txt"
+		// Windows path: "C:\Users\rubsy\git\Lab6\data\input\StudentData1.txt"
+		dataArr = IO.readFile("/home/ruby/git/Lab6/data/input/StudentData1.txt", dataArr);
 		Statistics stats = new Statistics();
 		stats.checkData(dataArr); // Check if there's student data present at all
 		stats.findLow(dataArr);

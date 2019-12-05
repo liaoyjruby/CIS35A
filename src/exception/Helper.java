@@ -17,10 +17,10 @@ public class Helper {
 	// Write class called Helper - empty class
 	// Write > 1 child classes - Helper1to100
 
-	printMyProblem(){
-		// Write a logFile to write each exception in a text file
+	public void printProblem(){ // log exceptions into .txt file
+		// Linux: "/home/ruby/git/Lab6/data/output/ProblemLog.txt"
 	// FileWriter, Buffered Writer
-		Format.printf - to format a string like printf function
+		//Format.printf - to format a string like printf function
 	}
 
 }
