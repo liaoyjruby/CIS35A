@@ -1,18 +1,35 @@
-package model; // MODEL PACKAGE bc it’s data
+package model;
 
-public class StudentGrade {
-	private Student s1;
-	private Statistics s2;
+import java.io.Serializable;
 
-	// no default constructor -- not interested in null values for students and
-	// statistics
-	// have constructor that you can use to pass Student and Statistics
-	StudentGrade(Student s1, Statistics s2) {
+public class StudentGrade implements Serializable {
+	private Student stud;
+	private Statistics stats;
+
+	public StudentGrade(Student stud, Statistics stats) { // Puts both Student and Statistics object into one object
+		this.stud = stud;
+		this.stats = stats;
 	}
-	// getters setters
-	// print method
 
-	public void print() {
-
+	public Student getStud() {
+		return stud;
 	}
+
+	public void setStud(Student stud) {
+		this.stud = stud;
+	}
+
+	public Statistics getStats() {
+		return stats;
+	}
+
+	public void setStats(Statistics stats) {
+		this.stats = stats;
+	}
+
+	public void printScores() {
+		stud.printStudent(); // Print individual student scores
+		stats.printStats(4); // Print all class statistics
+	}
+
 }

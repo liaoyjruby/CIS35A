@@ -1,5 +1,7 @@
 package adapter;
 
-public abstract class StudentAPI {
-
+public interface StudentAPI {
+	void printStudentScore(int SID);
+	void printStatistics(int SID);
+	
 }

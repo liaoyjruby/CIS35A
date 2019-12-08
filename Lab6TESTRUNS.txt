@@ -1,0 +1,103 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 6
+Due 7 December 2019
+Submitted 7 December 2019
+
+LAB 5 TEST RUNS
+
+PART 1 TEST 1: File path to normal data file ("StudentData1.txt")
+
+Console output:
+
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
+
+** No change to ProblemLog.txt
+
+
+PART 1 TEST 2: File path to incorrect data file ("StudentData2.txt")
+
+Console output:
+
+>> Encountered exception: 2 - Missing Header 
+    > Fixed and logged to ProblemLog.txt 
+
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
+
+ProblemLog.txt output:
+
+EXCEPTION LOG
+>> Encountered exception: 2 - Missing Header
+
+
+PART 1 TEST 3: 5 student entries ("StudentData3.txt")
+
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      11     7      20     32     30     
+  High:     100    45     100    90     77     
+  Average:  54.6   23.4   67.2   71.0   49.0   
+
+** No change to ProblemLog.txt
+
+
+
+PART 2 TEST 1: 45 student entries ("StudentData1.txt")
+
+Student ID: 1234
+  Quiz:     1     2     3     4     5
+  Score:    52    7     100   78    34    
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
+
+** In data/output folder, 15 unique .dat files are generated
+
+
+PART 2 TEST 2: 5 student entries ("StudentData3.txt")
+
+Student ID: 1234
+  Quiz:     1     2     3     4     5
+  Score:    52    7     100   78    34    
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      11     7      20     32     30     
+  High:     100    45     100    90     77     
+  Average:  54.6   23.4   67.2   71.0   49.0   
+
+** In data/output folder, 5 unique .dat files are generated
+
+
+
+PART 3 TEST 1: "StudentData1.txt"
+
+~ STUDENT GRADE VIEW ~ 
+
+Student ID: 1234
+  Quiz:     1     2     3     4     5
+  Score:    52    7     100   78    34    
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
+Student ID: 3124
+  Quiz:     1     2     3     4     5
+  Score:    100   45    20    90    70    
+Class Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
+
+** In data/output folder, 15 unique .dat files are generated

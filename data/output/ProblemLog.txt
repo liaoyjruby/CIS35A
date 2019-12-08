@@ -1,0 +1,3 @@
+EXCEPTION LOG
+>> Encountered exception: 2 - Missing Header
+>> Encountered exception: 2 - Missing Header

@@ -1,12 +1,15 @@
 package model;
 
-public class Statistics {
+import java.io.Serializable;
+
+public class Statistics implements Serializable {
 	private int[] lowScores = new int[5];
 	private int[] highScores = new int[5];
 	private float[] avgScores = new float[5];
 	private boolean dataPresent = true;
 
 	public Statistics() { // Constructor
+		
 	}
 
 	public void checkData(Student[] dataArr) { // Boolean is used in case of 0 records
@@ -88,7 +91,7 @@ public class Statistics {
 				}
 				break;
 			case 4: // Print all
-				System.out.printf("%nResults:%n  Quiz:     1      2      3      4      5%n  Low:      ");
+				System.out.printf("%nClass Results:%n  Quiz:     1      2      3      4      5%n  Low:      ");
 				for (int i = 0; i < lowScores.length; i++) {
 					System.out.printf("%-7d", lowScores[i]);
 				}

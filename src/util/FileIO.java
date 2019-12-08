@@ -1,21 +1,22 @@
 package util;
 
-import java.io.*; // FileReader, BufferedReader
-import java.util.*; // StringTokenizer
-import model.Student; // For creating Student object
+import java.io.*; // FileReader, BufferedReader, Serializable
+import java.util.StringTokenizer;
+import exception.StudentGradingException;
+import model.*; // Student, StudentGrade
 
-public class FileIO {
-	
+public class FileIO implements Serializable {
+
 	private boolean DEBUG = false;
 
 	public FileIO() { // Constructor
 	}
-	
+
 	public boolean isDEBUG() { // Getter for DEBUG value
 		return DEBUG;
 	}
 
-	public Student[] readFile(String fileName, Student[] dataArr) {
+	public Student[] readFile(String fileName, Student[] dataArr) throws StudentGradingException {
 		int counter = 0; // Indicates which line readFile() is on
 		try {
 			FileReader file = new FileReader(fileName); // Open file
@@ -29,6 +30,9 @@ public class FileIO {
 				else {
 					if (DEBUG) // Only prints what is read when DEBUG = true
 						System.out.println("Reading " + line);
+					if (counter == 1 && !line.contains("Stud")) {
+						throw new StudentGradingException(2, "Missing Header");
+					}
 					if (counter > 1 && counter <= 41) // Skips first line of file, the data table header
 						// Creates student object in Student[] up to the 40th record in .txt
 						dataArr[counter - 2] = buildStudent(line);
@@ -36,7 +40,7 @@ public class FileIO {
 			}
 			buff.close();
 		} catch (IOException e) { // In case of exception during file reading, will print exception
-			System.out.println("Error -- " + e.toString());
+			System.out.println("Error: " + e.toString());
 		}
 		return dataArr;
 	}
@@ -54,8 +58,37 @@ public class FileIO {
 			student.setScores(scoreArr); // Set constructed quiz score array to student's score array
 		}
 		return student;
+	}
 
-		// serialize f
+	public void serializeStudentGrade(StudentGrade[] sga) { // Serialize StudentGrade object as .dat file
+		int counter = 0;
+		while (sga[counter] != null) {
+			try {
+				File file = new File("C:\\Users\\rubsy\\git\\Lab6\\data\\output\\"
+						+ sga[counter].getStud().getSID() + ".dat"); // SID name is passed to new file name
+				FileOutputStream fileOut = new FileOutputStream(file.getAbsolutePath());
+				ObjectOutputStream objOut = new ObjectOutputStream(fileOut);
+				objOut.writeObject(sga[counter]);
+				objOut.close();
+			} catch (IOException e) {
+				System.out.println("Error: " + e.toString());
+			}
+			counter++; // Move on to next student in sga array
+		}
+	}
 
-}
+	public StudentGrade deserializeStudentGrade(String fileName) { // Return .dat file as StudentGrade object
+		try {
+			ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName));
+			try {
+				StudentGrade studGrade = (StudentGrade) in.readObject();
+				return studGrade;
+			} catch (ClassNotFoundException e) {
+				System.out.println("Error: " + e.toString());
+			}
+		} catch (IOException e) {
+			System.out.println("Error: " + e.toString());
+		}
+		return null; // In case exception is caught
+	}
 }
