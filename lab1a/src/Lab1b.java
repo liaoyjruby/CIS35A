@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Lab1b {
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in).useDelimiter("\\r\\n");
+		Scanner in = new Scanner(System.in).useDelimiter(";|\\R");
 
 		System.out.printf("Enter a positive whole number to approximate its square root (ex. 4): ");
 		// Prevent non-long input

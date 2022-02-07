@@ -1,10 +1,10 @@
 public class Driver {
 
 	public static void main(String[] args) {
-		// Windows: C:\\Users\\rubsy\\git\\Lab3\\src\\Salesdat.txt
+		// Windows: C:\\Users\\rubsy\\git\\Lab3\\src\\Salesdat.txt or C:\\Users\\rubsy\\Documents\\CIS35A\\Lab3\\src\\Salesdat.txt
 		// Linux: /home/ruby/git/Lab3/src/Salesdat.txt
 		// Change to appropriate fully-qualified file path as needed
-		FileIO a1 = new FileIO("/home/ruby/git/Lab3/src/Salesdat.txt"); // Accesses Salesdat.txt file
+		FileIO a1 = new FileIO("C:\\Users\\rubsy\\Documents\\CIS35A\\Lab3\\src\\Salesdat.txt"); // Accesses Salesdat.txt file
 		Franchise f = a1.readData(); // Creates new franchise object from data read by FileIO class
 		f.computeData(); // Computes calculations for all stores in Franchise
 		UI UI = new UI();
