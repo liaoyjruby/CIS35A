@@ -1,0 +1,320 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 3
+Due 1 November 2019
+Submitted 1 November 2019
+
+LAB 3 TEST RUNS
+
+
+
+TEST 1: Enter store, print 1 analysis value, exit program
+
+~ PARIS BAGUETTE SALES ANALYZER ~
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  1
+
+Data analysis for Store 1: Cupertino
+  1. Total sales by week
+  2. Average daily sales by week
+  3. Total sales for all weeks
+  4. Average weekly sales
+  5. Week with highest sales
+  6. Week with lowest sales
+  7. Analyze all (1 - 6)
+Navigation:
+  8. Return to store selection
+
+Select data analysis (1 - 7) or return to store selection (8): 1
+
+Total sales by week:
+  Week 1: $11424.52
+  Week 2: $14290.00
+  Week 3: $17335.00
+  Week 4: $20380.00
+  Week 5: $23425.00
+
+Navigation:
+  7. Return to data analysis menu
+  8. Return to store selection 
+
+Enter choice (7 or 8): 8
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  7
+
+Thank you using ~ PARIS BAGUETTE SALES ANALYZER ~
+Have a nice day! :^)
+
+
+
+TEST 2: Enter multiple stores, choose multiple analyses, exit program
+
+~ PARIS BAGUETTE SALES ANALYZER ~
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  5
+
+Data analysis for Store 5: San Jose
+  1. Total sales by week
+  2. Average daily sales by week
+  3. Total sales for all weeks
+  4. Average weekly sales
+  5. Week with highest sales
+  6. Week with lowest sales
+  7. Analyze all (1 - 6)
+Navigation:
+  8. Return to store selection
+
+Select data analysis (1 - 7) or return to store selection (8): 4
+
+Average weekly sales: $2485.59
+
+Navigation:
+  7. Return to data analysis menu
+  8. Return to store selection 
+
+Enter choice (7 or 8): 7
+
+Data analysis for Store 5: San Jose
+  1. Total sales by week
+  2. Average daily sales by week
+  3. Total sales for all weeks
+  4. Average weekly sales
+  5. Week with highest sales
+  6. Week with lowest sales
+  7. Analyze all (1 - 6)
+Navigation:
+  8. Return to store selection
+
+Select data analysis (1 - 7) or return to store selection (8): 5
+
+Week with highest sales:
+  Week 5: $23453.25
+
+Navigation:
+  7. Return to data analysis menu
+  8. Return to store selection 
+
+Enter choice (7 or 8): 8
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  6
+
+Data analysis for Store 6: Santa Clara
+  1. Total sales by week
+  2. Average daily sales by week
+  3. Total sales for all weeks
+  4. Average weekly sales
+  5. Week with highest sales
+  6. Week with lowest sales
+  7. Analyze all (1 - 6)
+Navigation:
+  8. Return to store selection
+
+Select data analysis (1 - 7) or return to store selection (8): 7
+
+Showing all: 
+
+Total sales by week:
+  Week 1: $18919.47
+  Week 2: $21784.95
+  Week 3: $24829.95
+  Week 4: $27874.95
+  Week 5: $30919.95
+
+Average daily sale by week:
+  Week 1: $2702.78
+  Week 2: $3112.14
+  Week 3: $3547.14
+  Week 4: $3982.14
+  Week 5: $4417.14
+
+Total sales for all weeks: $124329.28
+
+Average weekly sales: $3552.26
+
+Week with highest sales:
+  Week 5: $30919.95
+
+Week with lowest sales:
+  Week 1: $18919.47
+
+Navigation:
+  7. Return to data analysis menu
+  8. Return to store selection 
+
+Enter choice (7 or 8): 8
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  2
+
+Data analysis for Store 2: Milpitas
+  1. Total sales by week
+  2. Average daily sales by week
+  3. Total sales for all weeks
+  4. Average weekly sales
+  5. Week with highest sales
+  6. Week with lowest sales
+  7. Analyze all (1 - 6)
+Navigation:
+  8. Return to store selection
+
+Select data analysis (1 - 7) or return to store selection (8): 2
+
+Average daily sale by week:
+  Week 1: $1274.93
+  Week 2: $1684.29
+  Week 3: $2119.29
+  Week 4: $2554.29
+  Week 5: $2989.29
+
+Navigation:
+  7. Return to data analysis menu
+  8. Return to store selection 
+
+Enter choice (7 or 8): 8
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  7
+
+Thank you using ~ PARIS BAGUETTE SALES ANALYZER ~
+Have a nice day! :^)
+
+
+
+TEST 3: Invalid numeric inputs
+
+~ PARIS BAGUETTE SALES ANALYZER ~
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  8
+
+Enter a number between 1 and 7:  4
+
+Data analysis for Store 4: Palo Alto
+  1. Total sales by week
+  2. Average daily sales by week
+  3. Total sales for all weeks
+  4. Average weekly sales
+  5. Week with highest sales
+  6. Week with lowest sales
+  7. Analyze all (1 - 6)
+Navigation:
+  8. Return to store selection
+
+Select data analysis (1 - 7) or return to store selection (8): 10
+
+Enter a number between 1 and 8:  1
+
+Total sales by week:
+  Week 1: $16534.42
+  Week 2: $19399.90
+  Week 3: $22444.90
+  Week 4: $25489.90
+  Week 5: $28534.90
+
+Navigation:
+  7. Return to data analysis menu
+  8. Return to store selection 
+
+Enter choice (7 or 8): 9
+
+Enter a number between 1 and 8:  8
+
+Data available for 6 stores over past 5 weeks.
+
+Locations:
+  1. Cupertino
+  2. Milpitas
+  3. Mountain View
+  4. Palo Alto
+  5. San Jose
+  6. Santa Clara
+Navigation:
+  7. Exit program
+
+Select a store (1 - 6) or exit (7):  0
+
+Enter a number between 1 and 7:  7
+
+Thank you using ~ PARIS BAGUETTE SALES ANALYZER ~
+Have a nice day! :^)
