@@ -1,0 +1,248 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 2 Part 2
+Due 18 October 2019
+Submitted 18 October 2019
+
+
+LAB 2B TEST RUNS
+
+
+TEST 1: Standard run of three coins with 20 tosses each
+
+
+Coin Toss Simulator! :^)
+
+Enter number of times to toss coin: 20
+
+Toss 1 - Heads
+Toss 2 - Heads
+Toss 3 - Heads
+Toss 4 - Tails
+Toss 5 - Heads
+Toss 6 - Heads
+Toss 7 - Heads
+Toss 8 - Tails
+Toss 9 - Heads
+Toss 10 - Heads
+Toss 11 - Heads
+Toss 12 - Tails
+Toss 13 - Tails
+Toss 14 - Heads
+Toss 15 - Heads
+Toss 16 - Heads
+Toss 17 - Tails
+Toss 18 - Tails
+Toss 19 - Tails
+Toss 20 - Heads
+
+Result after 20 tosses:
+Heads: 13 (65.00%)
+Tails: 7 (35.00%)
+
+Enter number of times to toss coin: 20
+
+Toss 1 - Tails
+Toss 2 - Heads
+Toss 3 - Tails
+Toss 4 - Heads
+Toss 5 - Heads
+Toss 6 - Heads
+Toss 7 - Tails
+Toss 8 - Tails
+Toss 9 - Tails
+Toss 10 - Heads
+Toss 11 - Heads
+Toss 12 - Heads
+Toss 13 - Heads
+Toss 14 - Heads
+Toss 15 - Heads
+Toss 16 - Tails
+Toss 17 - Heads
+Toss 18 - Tails
+Toss 19 - Heads
+Toss 20 - Tails
+
+Result after 20 tosses:
+Heads: 12 (60.00%)
+Tails: 8 (40.00%)
+
+Enter number of times to toss coin: 20
+
+Toss 1 - Heads
+Toss 2 - Tails
+Toss 3 - Heads
+Toss 4 - Heads
+Toss 5 - Heads
+Toss 6 - Tails
+Toss 7 - Tails
+Toss 8 - Heads
+Toss 9 - Tails
+Toss 10 - Tails
+Toss 11 - Heads
+Toss 12 - Tails
+Toss 13 - Tails
+Toss 14 - Heads
+Toss 15 - Heads
+Toss 16 - Heads
+Toss 17 - Tails
+Toss 18 - Tails
+Toss 19 - Heads
+Toss 20 - Heads
+
+Result after 20 tosses:
+Heads: 11 (55.00%)
+Tails: 9 (45.00%)
+
+Coin tosses complete!
+
+
+TEST RUN 2: Input invalid information
+
+Coin Toss Simulator! :^)
+
+Enter number of times to toss coin: -100
+
+
+Result after -100 tosses:
+Heads: 0 (0.00%)
+Tails: 0 (0.00%)
+
+Enter number of times to toss coin: 0
+
+
+Result after 0 tosses:
+Heads: 0 (NaN%)
+Tails: 0 (NaN%)
+
+Enter number of times to toss coin: 123
+
+Toss 1 - Tails
+Toss 2 - Tails
+Toss 3 - Tails
+Toss 4 - Heads
+Toss 5 - Heads
+Toss 6 - Heads
+Toss 7 - Tails
+Toss 8 - Heads
+Toss 9 - Tails
+Toss 10 - Heads
+Toss 11 - Tails
+Toss 12 - Tails
+Toss 13 - Tails
+Toss 14 - Tails
+Toss 15 - Heads
+Toss 16 - Tails
+Toss 17 - Heads
+Toss 18 - Tails
+Toss 19 - Heads
+Toss 20 - Heads
+Toss 21 - Heads
+Toss 22 - Heads
+Toss 23 - Tails
+Toss 24 - Tails
+Toss 25 - Heads
+Toss 26 - Heads
+Toss 27 - Heads
+Toss 28 - Tails
+Toss 29 - Tails
+Toss 30 - Tails
+Toss 31 - Tails
+Toss 32 - Heads
+Toss 33 - Heads
+Toss 34 - Heads
+Toss 35 - Tails
+Toss 36 - Heads
+Toss 37 - Tails
+Toss 38 - Tails
+Toss 39 - Tails
+Toss 40 - Tails
+Toss 41 - Heads
+Toss 42 - Tails
+Toss 43 - Tails
+Toss 44 - Heads
+Toss 45 - Tails
+Toss 46 - Heads
+Toss 47 - Heads
+Toss 48 - Heads
+Toss 49 - Heads
+Toss 50 - Heads
+Toss 51 - Heads
+Toss 52 - Heads
+Toss 53 - Tails
+Toss 54 - Heads
+Toss 55 - Tails
+Toss 56 - Tails
+Toss 57 - Heads
+Toss 58 - Heads
+Toss 59 - Heads
+Toss 60 - Tails
+Toss 61 - Tails
+Toss 62 - Tails
+Toss 63 - Heads
+Toss 64 - Tails
+Toss 65 - Tails
+Toss 66 - Tails
+Toss 67 - Tails
+Toss 68 - Heads
+Toss 69 - Tails
+Toss 70 - Heads
+Toss 71 - Tails
+Toss 72 - Tails
+Toss 73 - Tails
+Toss 74 - Heads
+Toss 75 - Heads
+Toss 76 - Tails
+Toss 77 - Tails
+Toss 78 - Tails
+Toss 79 - Heads
+Toss 80 - Heads
+Toss 81 - Heads
+Toss 82 - Heads
+Toss 83 - Heads
+Toss 84 - Tails
+Toss 85 - Tails
+Toss 86 - Heads
+Toss 87 - Heads
+Toss 88 - Tails
+Toss 89 - Tails
+Toss 90 - Heads
+Toss 91 - Tails
+Toss 92 - Tails
+Toss 93 - Tails
+Toss 94 - Heads
+Toss 95 - Tails
+Toss 96 - Tails
+Toss 97 - Tails
+Toss 98 - Tails
+Toss 99 - Tails
+Toss 100 - Heads
+Toss 101 - Tails
+Toss 102 - Tails
+Toss 103 - Heads
+Toss 104 - Tails
+Toss 105 - Heads
+Toss 106 - Tails
+Toss 107 - Heads
+Toss 108 - Tails
+Toss 109 - Tails
+Toss 110 - Tails
+Toss 111 - Tails
+Toss 112 - Tails
+Toss 113 - Tails
+Toss 114 - Heads
+Toss 115 - Tails
+Toss 116 - Heads
+Toss 117 - Heads
+Toss 118 - Heads
+Toss 119 - Tails
+Toss 120 - Heads
+Toss 121 - Tails
+Toss 122 - Heads
+Toss 123 - Heads
+
+Result after 123 tosses:
+Heads: 56 (45.53%)
+Tails: 67 (54.47%)
+
+Coin tosses complete!
