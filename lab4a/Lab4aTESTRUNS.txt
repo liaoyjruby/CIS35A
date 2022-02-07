@@ -1,0 +1,94 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 4 Exercise 1
+Due 13 November 2019
+Submitted 13 November 2019
+
+LAB 4A TEST RUNS
+
+
+TEST 1: Driver1.java output
+
+Account (1) starting balance: $2000.00
+Account (2) starting balance: $3000.00
+
+~NEW MONTH~
+Annual Interest Rate: 4%
+Monthly Interest Earned: $6.67
+(1) Balance: $2006.67
+
+~NEW MONTH~
+Annual Interest Rate: 4%
+Monthly Interest Earned: $10.00
+(2) Balance: $3010.00
+
+~NEW MONTH~
+Annual Interest Rate: 5%
+Monthly Interest Earned: $8.36
+(1) Balance: $2015.03
+
+~NEW MONTH~
+Annual Interest Rate: 5%
+Monthly Interest Earned: $12.54
+(2) Balance: $3022.54
+
+
+
+TEST 2: Driver2.java output
+
+Account (1) starting balance: $2000.00
+Account (2) starting balance: $3000.00
+
+Amount deposited: $10000.00
+(1) Balance: $12000.00
+
+~NEW MONTH~
+Special Interest Rate: 10%
+Monthly Interest Earned: $100.00
+(1) Balance: $12100.00
+
+Amount withdrawn: $123.40
+(1) Balance: $11976.60
+
+Amount withdrawn: $9999.99
+(1) Balance: $1976.61
+
+~NEW MONTH~
+Annual Interest Rate: 4%
+Monthly Interest Earned: $6.59
+(1) Balance: $1983.20
+
+Amount deposited: $12345.67
+(1) Balance: $14328.87
+
+~NEW MONTH~
+Special Interest Rate: 10%
+Monthly Interest Earned: $119.41
+(1) Balance: $14448.28
+
+~NEW MONTH~
+Annual Interest Rate: 4%
+Monthly Interest Earned: $10.00
+(2) Balance: $3010.00
+
+Amount deposited: $1.23
+(2) Balance: $3011.23
+
+Amount deposited: $2345.67
+(2) Balance: $5356.90
+
+Amount withdrawn: $5.99
+(2) Balance: $5350.91
+
+~NEW MONTH~
+Annual Interest Rate: 4%
+Monthly Interest Earned: $17.84
+(2) Balance: $5368.75
+
+Amount deposited: $5123566.12
+(2) Balance: $5128934.87
+
+~NEW MONTH~
+Special Interest Rate: 10%
+Monthly Interest Earned: $42741.12
+(2) Balance: $5171675.99
