@@ -1,0 +1,59 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 5
+Due 20 November 2019
+Submitted 20 November 2019
+
+LAB 5 TEST RUNS
+
+TEST 1: 0 student records
+
+No data to find low.
+No data to find high.
+No data to find average.
+No results to print.
+
+
+TEST 2: 1 student record
+
+Results:
+  Quiz:     1      2      3      4      5
+  Low:      52     7      100    78     34     
+  High:     52     7      100    78     34     
+  Average:  52.0   7.0    100.0  78.0   34.0   
+
+
+TEST 3: 10 student records
+
+Results:
+  Quiz:     1      2      3      4      5
+  Low:      11     7      20     32     20     
+  High:     100    100    100    90     78     
+  Average:  51.6   35.6   67.8   74.5   49.9   
+
+
+TEST 4: 15 student records
+
+Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  46.2   42.3   70.5   75.7   49.7   
+
+
+TEST 5: 40 student records
+
+Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
+
+
+TEST 6: 45 student records
+
+Results:
+  Quiz:     1      2      3      4      5
+  Low:      0      7      0      32     10     
+  High:     100    100    100    90     80     
+  Average:  47.5   40.7   69.8   75.4   49.8   
