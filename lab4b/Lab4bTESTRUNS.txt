@@ -1,0 +1,77 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 4 Exercise 2
+Due 13 November 2019
+Submitted 13 November 2019
+
+LAB 4B TEST RUNS
+
+TEST 1: Driver.java output
+
+
+Ship (1) - Normandy
+Owner: Shepard
+Size: 1000 square feet
+  (100 ft x 10 ft)
+>> Normandy departed from Oakland and will arrive at New York
+
+Ship (2) - Adrestia
+Owner: Kassandra
+Size: 1476 square feet
+  (123 ft x 12 ft)
+>> Adrestia departed from Seattle and will arrive at Los Angeles
+
+Ship (3) - Bubboat
+Owner: Bubbles Shipping Co.
+Size: 260000 square feet
+  (1300 ft x 200 ft)
+Container capacity: 6500
+Cargo type: Canned fish
+Cargo value: $8024691285.00
+Number of cranes: 2
+Loading method: Air dropped
+>> Bubboat is currently docked at Singapore
+
+Ship (4) - Palamecia
+Owner: Sanctum Skyfleet
+Size: 151782 square feet
+  (1234 ft x 123 ft)
+Container capacity: 3790
+Cargo type: Military weapons
+Cargo value: $4679012303.10
+Number of cranes: 2
+Loading method: Ramp loaded
+>> Palamecia departed from Hong Kong and will arrive at Busan
+
+Ship (5) - Hyperion
+Owner: Andromeda Cruises
+Size: 181874 square feet
+  (1181 ft x 154 ft)
+Number of rooms: 4545
+Ticket price: $5678.90
+  Cruise tier: Luxury
+  Buffet menu: Splendid Seafood Spread
+  Entertainment: Ludwig van Beethoven (resurrected as a hologram)
+>> Hyperion departed from Avignon and will arrive at Bora Bora
+
+Ship (6) - Athena
+Owner: Overwatch Adventures
+Size: 60904 square feet
+  (662 ft x 92 ft)
+Number of rooms: 1520
+Ticket price: $123.45
+  Cruise tier: Budget
+  Buffet menu: Fast Food Fiesta
+  Entertainment: Charli XCX
+>> Athena departed from Glacier Bay and will arrive at Vienna
+
+Ship (7) - Horizon Lunar Dawn
+Owner: Andromeda Cruises
+Size: 118472 square feet
+  (1004 ft x 118 ft)
+Number of rooms: 2960
+Ticket price: $2222.22
+  Cruise tier: Premium
+  Buffet menu: Surf & Turf
+  Entertainment: Red Velvet
+>> Horizon Lunar Dawn departed from Glacier Bay and will arrive at Singapore
