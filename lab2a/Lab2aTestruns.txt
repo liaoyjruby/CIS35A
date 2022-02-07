@@ -1,0 +1,388 @@
+Yi Jou (Ruby) Liao
+CIS 35A - Section 61Y
+Assignment 2 Part 1
+Due 18 October 2019
+Submitted 18 October 2019
+
+LAB 2A TEST RUNS
+
+
+TEST 1: Three standard information entries
+
+Please input each person's information.
+
+Enter full name: John Smith
+
+Enter address: 123 Road Rd
+
+Enter age: 30
+
+Enter 10 digit phone number: 1231231231
+
+Person 1
+Name: John Smith
+Address: 123 Road Rd
+Age: 30
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > Y
+
+
+Enter full name: Claire Farron
+
+Enter address: 321 Bodhum Ave
+
+Enter age: 21
+
+Enter 10 digit phone number: 1234567890
+
+Person 2
+Name: Claire Farron
+Address: 321 Bodhum Ave
+Age: 21
+Phone number: (123)456-7890
+
+Add another entry? (Y/N)  > Y
+
+
+Enter full name: Bubbles Cat
+
+Enter address: 2345 Crystal Ct
+
+Enter age: 1
+
+Enter 10 digit phone number: 0987654321
+
+Person 3
+Name: Bubbles Cat
+Address: 2345 Crystal Ct
+Age: 1
+Phone number: (098)765-4321
+
+Add another entry? (Y/N)  > N
+Input complete. Display all entries? (Y/N)  > Y
+
+Person 1
+Name: John Smith
+Address: 123 Road Rd
+Age: 30
+Phone number: (123)123-1231
+
+Person 2
+Name: Claire Farron
+Address: 321 Bodhum Ave
+Age: 21
+Phone number: (123)456-7890
+
+Person 3
+Name: Bubbles Cat
+Address: 2345 Crystal Ct
+Age: 1
+Phone number: (098)765-4321
+
+Total entries: 3 
+
+
+TEST 2: Input invalid information
+
+Please input each person's information.
+
+Enter full name: asdawf asfklj
+
+Enter address: 09581 oaiewj alskd
+
+Enter age: -100
+
+Enter a positive whole number (ex. 19): 19999
+
+Enter 10 digit phone number: 911
+
+Please enter a 10 digit phone number (ex.4081234567): -12
+
+Please enter a 10 digit phone number (ex.4081234567): 12123213123 
+
+Please enter a 10 digit phone number (ex.4081234567): 1231231231
+
+Person 1
+Name: Asdawf Asfklj
+Address: 09581 Oaiewj Alskd
+Age: 19999
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: my dad
+
+Enter address: 984 rooad
+
+Enter age: 999
+
+Enter 10 digit phone number: 123123123123
+
+Please enter a 10 digit phone number (ex.4081234567): 1231231231
+
+Person 2
+Name: My Dad
+Address: 984 Rooad
+Age: 999
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > no
+Input complete. Display all entries? (Y/N)  > ok
+Please input either "Y" or "N":  > y
+
+Person 1
+Name: Asdawf Asfklj
+Address: 09581 Oaiewj Alskd
+Age: 19999
+Phone number: (123)123-1231
+
+Person 2
+Name: My Dad
+Address: 984 Rooad
+Age: 999
+Phone number: (123)123-1231
+
+Total entries: 2 
+
+
+TEST RUN 3: Max out 10 entries
+
+Please input each person's information.
+
+Enter full name: 1
+
+Enter address: 1
+
+Enter age: 1
+
+Enter 10 digit phone number: 1231231231
+
+Person 1
+Name: 1
+Address: 1
+Age: 1
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 2
+
+Enter address: 2
+
+Enter age: 2
+
+Enter 10 digit phone number: 1231231231
+
+Person 2
+Name: 2
+Address: 2
+Age: 2
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 3
+
+Enter address: 3
+
+Enter age: 3
+
+Enter 10 digit phone number: 3
+
+Please enter a 10 digit phone number (ex.4081234567): 1231231231
+
+Person 3
+Name: 3
+Address: 3
+Age: 3
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 4
+
+Enter address: 4
+4
+Enter age: 
+
+Enter 10 digit phone number: 1231231231
+
+Person 4
+Name: 4
+Address: 4
+Age: 4
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 5
+
+Enter address: 5
+
+Enter age: 5
+
+Enter 10 digit phone number: 1231231231
+
+Person 5
+Name: 5
+Address: 5
+Age: 5
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 6
+6
+Enter address: 
+
+Enter age: 6
+
+Enter 10 digit phone number: 1231231231
+
+Person 6
+Name: 6
+Address: 6
+Age: 6
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 7
+
+Enter address: 7
+
+Enter age: 7
+
+Enter 10 digit phone number: 1231231231
+
+Person 7
+Name: 7
+Address: 7
+Age: 7
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 8
+
+Enter address: 8
+
+Enter age: 8
+
+Enter 10 digit phone number: 1231231231
+
+Person 8
+Name: 8
+Address: 8
+Age: 8
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 9
+
+Enter address: 9
+
+Enter age: 9
+
+Enter 10 digit phone number: 1231231231
+
+Person 9
+Name: 9
+Address: 9
+Age: 9
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+
+
+Enter full name: 0
+
+Enter address: 0
+
+Enter age: 0
+
+Enter a positive whole number (ex. 19): 1
+
+Enter 10 digit phone number: 1231231231
+
+Person 10
+Name: 0
+Address: 0
+Age: 1
+Phone number: (123)123-1231
+
+Add another entry? (Y/N)  > y
+Input complete. Display all entries? (Y/N)  > y
+
+Person 1
+Name: 1
+Address: 1
+Age: 1
+Phone number: (123)123-1231
+
+Person 2
+Name: 2
+Address: 2
+Age: 2
+Phone number: (123)123-1231
+
+Person 3
+Name: 3
+Address: 3
+Age: 3
+Phone number: (123)123-1231
+
+Person 4
+Name: 4
+Address: 4
+Age: 4
+Phone number: (123)123-1231
+
+Person 5
+Name: 5
+Address: 5
+Age: 5
+Phone number: (123)123-1231
+
+Person 6
+Name: 6
+Address: 6
+Age: 6
+Phone number: (123)123-1231
+
+Person 7
+Name: 7
+Address: 7
+Age: 7
+Phone number: (123)123-1231
+
+Person 8
+Name: 8
+Address: 8
+Age: 8
+Phone number: (123)123-1231
+
+Person 9
+Name: 9
+Address: 9
+Age: 9
+Phone number: (123)123-1231
+
+Person 10
+Name: 0
+Address: 0
+Age: 1
+Phone number: (123)123-1231
+
+Total entries: 10 
